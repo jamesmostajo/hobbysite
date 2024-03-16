@@ -17,8 +17,8 @@ def article_list(request):
 def article(request, pk):
     article = Article.objects.get(pk=pk)
     ctx = {
-        "name": article.name,
-        "category": article.article_category.name,
+        "name": article.title,
+        "category": article.category.name,
         "entry": article.entry,
         "created_on": article.created_on,
         "updated_on": article.updated_on,
