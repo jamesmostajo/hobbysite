@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Forum</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a
+          href="{% url 'forum:post_list' %}"
+          style="color: black; text-decoration: none"
+        >
+          Forums
+        </a>
+      </h1>
+    </header>
+    {% block content %}{% endblock %}
+  </body>
+</html>
