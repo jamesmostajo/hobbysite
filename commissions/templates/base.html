@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Commissions</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a
+          href="{% url 'commissions:comment_list' %}"
+          style="color: black; text-decoration: none"
+        >
+          Comments
+        </a>
+      </h1>
+    </header>
+    {% block content %}{% endblock %}
+  </body>
+</html>
